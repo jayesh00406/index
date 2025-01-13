@@ -1,0 +1,88 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Section */
+  .protective-header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .protective-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .protective-header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  /* Main Content */
+  .protective-main {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  
+  /* Protective Order Sections */
+  .protective-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .protective-section h2 {
+    font-size: 2em;
+    color: #f44336;
+    margin-bottom: 15px;
+  }
+  
+  .protective-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .protective-section li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+  }
+  
+  .protective-section a {
+    color: #f44336;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .protective-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .protective-header h1 {
+      font-size: 2em;
+    }
+  
+    .protective-main {
+      width: 100%;
+    }
+  
+    .protective-section h2 {
+      font-size: 1.8em;
+    }
+  }

@@ -1,0 +1,131 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Financial Literacy Header */
+  .financial-header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .financial-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .financial-header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  /* Main Content */
+  .financial-main {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  
+  /* Program Overview Section */
+  .program-overview, 
+  .program-benefits, 
+  .program-how-it-works {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .program-overview h2,
+  .program-benefits h2,
+  .program-how-it-works h2 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .program-overview p,
+  .program-how-it-works p,
+  .program-benefits ul {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  /* Benefits List */
+  .program-benefits ul {
+    list-style-type: none;
+  }
+  
+  .program-benefits li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Call to Action Section */
+  .call-to-action {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
+  .call-to-action p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .btn-learn-more {
+    padding: 12px 25px;
+    background-color: #fff;
+    color: #007bff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .btn-learn-more:hover {
+    background-color: #ddd;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .financial-header h1 {
+      font-size: 2em;
+    }
+  
+    .financial-main {
+      width: 100%;
+    }
+  
+    .program-overview h2,
+    .program-benefits h2,
+    .program-how-it-works h2 {
+      font-size: 1.8em;
+    }
+  
+    .call-to-action h2 {
+      font-size: 1.8em;
+    }
+  }

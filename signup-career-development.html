@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up for Career Development Program | Women's Empowerment and Safety</title>
+  <link rel="stylesheet" href="signup-career-development.css">
+</head>
+<body>
+
+  <!-- Sign Up Header Section -->
+  <header class="signup-header">
+    <h1>Sign Up for the Career Development Program</h1>
+    <p>Empower your career with the tools, knowledge, and mentorship you need to succeed.</p>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="signup-main">
+    <!-- Registration Form Section -->
+    <section class="signup-section">
+      <h2>Fill Out the Form to Join</h2>
+      <form action="/submit-career-signup" method="post" class="signup-form">
+        <!-- Full Name -->
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+        <!-- Email Address -->
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+        <!-- Career Goals -->
+        <label for="career-goals">What are your career goals?</label>
+        <textarea id="career-goals" name="career-goals" rows="4" required placeholder="Describe your career goals and aspirations"></textarea>
+
+        <!-- Preferred Program Schedule -->
+        <label for="schedule">Preferred Program Schedule</label>
+        <select id="schedule" name="schedule" required>
+          <option value="">Select a preferred schedule</option>
+          <option value="Monday 5:00 PM - 6:30 PM">Monday 5:00 PM - 6:30 PM</option>
+          <option value="Wednesday 5:00 PM - 6:30 PM">Wednesday 5:00 PM - 6:30 PM</option>
+          <option value="Saturday 11:00 AM - 1:00 PM">Saturday 11:00 AM - 1:00 PM</option>
+        </select>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-submit">Sign Up Now</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

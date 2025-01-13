@@ -1,0 +1,88 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Section */
+  .job-header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ff5722;
+    color: #fff;
+  }
+  
+  .job-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .job-header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  /* Main Content */
+  .job-main {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  
+  /* Job Search Sections */
+  .job-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-section h2 {
+    font-size: 2em;
+    color: #ff5722;
+    margin-bottom: 15px;
+  }
+  
+  .job-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .job-section li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+  }
+  
+  .job-section a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .job-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .job-header h1 {
+      font-size: 2em;
+    }
+  
+    .job-main {
+      width: 100%;
+    }
+  
+    .job-section h2 {
+      font-size: 1.8em;
+    }
+  }

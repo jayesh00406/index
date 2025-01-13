@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up for Self-Defense Program | Women's Empowerment and Safety</title>
+  <link rel="stylesheet" href="signup-selfdef.css">
+</head>
+<body>
+
+  <!-- Sign Up Header Section -->
+  <header class="signup-header">
+    <h1>Join Our Self-Defense Program</h1>
+    <p>Sign up today and take the first step toward building your self-defense skills and personal safety.</p>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="signup-main">
+    <!-- Registration Form Section -->
+    <section class="signup-section">
+      <h2>Fill Out the Form to Join</h2>
+      <form action="/submit-signup" method="post" class="signup-form">
+        <!-- Full Name -->
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+        <!-- Email Address -->
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+        <!-- Preferred Class Time -->
+        <label for="class-time">Preferred Class Time</label>
+        <select id="class-time" name="class-time" required>
+          <option value="">Select a time</option>
+          <option value="Monday 6:00 PM - 7:30 PM">Monday 6:00 PM - 7:30 PM</option>
+          <option value="Wednesday 6:00 PM - 7:30 PM">Wednesday 6:00 PM - 7:30 PM</option>
+          <option value="Saturday 10:00 AM - 12:00 PM">Saturday 10:00 AM - 12:00 PM</option>
+        </select>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-submit">Sign Up Now</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

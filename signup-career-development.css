@@ -1,0 +1,106 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Sign Up Header */
+  .signup-header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .signup-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .signup-header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  /* Main Content */
+  .signup-main {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+  }
+  
+  /* Registration Form Section */
+  .signup-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-section h2 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .signup-form label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .signup-form input,
+  .signup-form select,
+  .signup-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .signup-form input:focus,
+  .signup-form select:focus,
+  .signup-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    background-color: #007bff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .signup-header h1 {
+      font-size: 2em;
+    }
+  
+    .signup-section h2 {
+      font-size: 1.8em;
+    }
+  }

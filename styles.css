@@ -1,0 +1,409 @@
+/* General Styling */
+:root {
+  --primary-color: #1d3557; /* Deep Navy Blue */
+  --secondary-color: #f1faee; /* Soft Light Gray */
+  --highlight-color: #e9c46a; /* Soft Gold */
+  --background-color: #f4f4f4; /* Light Gray */
+  --text-color: #333; /* Dark Gray for text */
+  --heading-font: 'Merriweather', serif;  /* Elegant serif font for headings */
+  --body-font: 'Inter', sans-serif;   /* Clean sans-serif for body */
+  --border-radius: 8px;
+  --max-width: 1200px;
+  --padding: 20px;
+  --transition-speed: 0.3s;
+}
+
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading-font); /* Apply Merriweather font to headings */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button, a.btn {
+  border: none;
+  cursor: pointer;
+}
+
+/* Header Styling */
+header {
+  background-color: var(--primary-color); /* Deep Navy Blue */
+  padding: var(--padding) 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav ul li {
+  font-size: 1.1rem;
+  position: relative;
+}
+
+/* Footer Section */
+.footer {
+  background-color: var(--primary-color); /* Deep Navy Blue */
+  color: var(--secondary-color); /* Light Gray Text */
+  padding: var(--padding) 0;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 5px 0; /* Adds spacing between footer elements */
+}
+
+.footer-link {
+  color: var(--highlight-color); /* Soft Gold for links */
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+.footer-link:hover {
+  color: #c7a60f; /* Darker Gold on hover */
+}
+
+/* Navigation Styling */
+nav ul li a {
+  color: #fff; /* White text */
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color var(--transition-speed), text-decoration var(--transition-speed);
+}
+
+nav ul li a:hover {
+  color: var(--highlight-color); /* Soft Gold on hover */
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--highlight-color); /* Soft Gold underline */
+  transition: width 0.3s ease, bottom 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  bottom: 0;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  padding: 100px 20px;
+  background-image: url('images/background.JPg'); /* AI-generated background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+} 
+
+/* About Us Section */
+.aboutus {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.aboutus h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.aboutus p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.btn-secondary {
+  background-color: var(--highlight-color); /* Soft Gold */
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  margin-top: 30px;
+  transition: background-color var(--transition-speed);
+}
+
+.btn-secondary:hover {
+  background-color: #c7a60f; /* Darker Gold on hover */
+}
+
+/* Features Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature-cards {
+  display: grid;
+  gap: 20px;
+}
+
+.feature-cards .card {
+  background-color: white;
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.feature-cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Call to Action */
+.cta {
+  background-color: var(--primary-color); /* Deep Navy Blue */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.125rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.cta .btn-primary {
+  background-color: var(--primary-color); /* Navy Blue */
+  color: white; /* White text */
+  padding: 12px 25px;
+  border-radius: var(--border-radius);
+  font-size: 1.2rem;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+  border: 2px solid var(--primary-color); /* Border to match primary color */
+}
+
+.cta .btn-primary:hover {
+  background-color: white; /* White background on hover */
+  color: var(--primary-color); /* Navy Blue text */
+  border-color: var(--primary-color); /* Border color stays the same */
+}
+
+/* Programs Section */
+.programs {
+  padding: 60px 20px;
+  color: white; /* Set text color to white */
+}
+
+.programs header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.programs header h1 {
+  font-size: 2.8rem;
+  color: white; /* Ensure the header text is white */
+}
+
+.programs header p {
+  font-size: 1.125rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white; /* Ensure the paragraph text is white */
+}
+
+.programs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.program-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.program-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform var(--transition-speed);
+}
+
+.program-card:hover img {
+  transform: scale(1.05);
+}
+
+.program-content {
+  padding: 20px;
+  color: white; /* Ensure the program content text is white */
+}
+
+.program-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: rgb(25, 24, 24); /* Set the heading color to white */
+}
+
+.program-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: rgb(21, 20, 20); /* Set the paragraph text to white */
+}
+
+.btn-program {
+  background-color: var(--primary-color); /* Deep Navy Blue */
+  color: #fdfcfc; /* White text */
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.btn-program:hover {
+  background-color: #16324b; /* Darker Navy Blue on hover */
+  transform: scale(1.05);
+}
+
+/* Resources Section */
+.resources {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.resources h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.resources p {
+  font-size: 1.125rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resources-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+  gap: 30px;
+}
+
+.category-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.category-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.category-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category-card ul li {
+  margin: 10px 0;
+}
+
+.category-card ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.category-card ul li a:hover {
+  color: var(--primary-color);
+}

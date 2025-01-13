@@ -1,0 +1,144 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  /* Apply background image to the body for better results */
+  background-image: url('images/self-defence.jpg');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+/* Header Section */
+.safety-header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(255, 107, 107, 0.9); /* Add transparency for overlay effect */
+  color: #fff;
+}
+
+.safety-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.safety-header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Main Content */
+.safety-main {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Introduction Section */
+.safety-intro {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.safety-intro h2 {
+  font-size: 2em;
+  color: #ff6b6b;
+  margin-bottom: 15px;
+}
+
+.safety-intro p {
+  font-size: 1.1em;
+}
+
+/* Steps Section */
+.safety-steps {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.safety-steps h2 {
+  font-size: 2em;
+  color: #ff6b6b;
+  margin-bottom: 15px;
+}
+
+.safety-steps ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.safety-steps li {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.safety-steps strong {
+  color: #333;
+}
+
+/* Resources Section */
+.safety-resources {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.safety-resources h2 {
+  font-size: 2em;
+  color: #ff6b6b;
+  margin-bottom: 15px;
+}
+
+.safety-resources ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.safety-resources li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.safety-resources a {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+.safety-resources a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .safety-header h1 {
+      font-size: 2em;
+  }
+
+  .safety-main {
+      width: 100%;
+  }
+
+  .safety-intro h2, .safety-steps h2, .safety-resources h2 {
+      font-size: 1.8em;
+  }
+}

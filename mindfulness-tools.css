@@ -1,0 +1,88 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Section */
+  .mindfulness-header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .mindfulness-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .mindfulness-header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  /* Main Content */
+  .mindfulness-main {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  
+  /* Mindfulness Sections */
+  .mindfulness-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mindfulness-section h2 {
+    font-size: 2em;
+    color: #4caf50;
+    margin-bottom: 15px;
+  }
+  
+  .mindfulness-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .mindfulness-section li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+  }
+  
+  .mindfulness-section a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .mindfulness-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mindfulness-header h1 {
+      font-size: 2em;
+    }
+  
+    .mindfulness-main {
+      width: 100%;
+    }
+  
+    .mindfulness-section h2 {
+      font-size: 1.8em;
+    }
+  }
